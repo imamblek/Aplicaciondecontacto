@@ -8,7 +8,8 @@
 
     </style>
 
-    <!-- warna header kalender -->
+    <style name="BotonStyle" parent="Theme.AppCompat.Light"></style>
+
     <style name="DatePicker" parent="Theme.AppCompat.Light.Dialog">
         <item name="colorAccent">@android:color/holo_red_dark</item>
     </style>

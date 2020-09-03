@@ -9,12 +9,14 @@
     tools:ignore="MissingConstraints">
 
 
-
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/tamañomargen"
+        android:paddingTop="@dimen/tamañomargen"
+        android:paddingRight="@dimen/tamañomargen">
 
         <TableLayout
             android:layout_width="wrap_content"
@@ -25,62 +27,69 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
             <TextView
                 android:id="@+id/nombre"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:text="@string/nombre"
                 android:textColor="@color/secondary_text"
                 android:textSize="@dimen/tamañoTextoMostrar"
-                android:textStyle="bold"
-                android:text="@string/nombre"/>
+                android:textStyle="bold" />
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
             <TextView
                 android:id="@+id/fecha"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:text="@string/fechaNacimiento"
                 android:textColor="@color/secondary_text"
                 android:textSize="@dimen/tamañoTextoMostrar"
-                android:textStyle="bold"
-                android:text="@string/fechaNacimiento"/>
+                android:textStyle="bold" />
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
             <TextView
                 android:id="@+id/telefono"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:text="@string/telefono"
                 android:textColor="@color/secondary_text"
                 android:textSize="@dimen/tamañoTextoMostrar"
-                android:textStyle="bold"
-                android:text="@string/telefono"/>
+                android:textStyle="bold" />
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
             <TextView
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:text="@string/email"
                 android:textColor="@color/secondary_text"
                 android:textSize="@dimen/tamañoTextoMostrar"
-                android:textStyle="bold"
-                android:text="@string/email"/>
+                android:textStyle="bold" />
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
             <TextView
                 android:id="@+id/descripcion"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:text="@string/descripcionContacto"
                 android:textColor="@color/secondary_text"
                 android:textSize="@dimen/tamañoTextoMostrar"
-                android:textStyle="bold"
-                android:text="@string/descripcionContacto"/>
+                android:textStyle="bold" />
         </TableLayout>
+
         <TableLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -90,66 +99,72 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
             <TextView
                 android:id="@+id/tvnombre"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Sin datos"
+                android:text=""
                 android:textColor="@color/primary_text"
                 android:textSize="@dimen/tamañoTextoMostrar"
-                android:textStyle="bold"
-                android:text=""/>
+                android:textStyle="bold" />
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
             <TextView
                 android:id="@+id/tvfecha"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Sin datos"
+                android:text=""
                 android:textColor="@color/primary_text"
                 android:textSize="@dimen/tamañoTextoMostrar"
-                android:textStyle="bold"
-                android:text=""/>
+                android:textStyle="bold" />
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
             <TextView
                 android:id="@+id/tvtelefono"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Sin datos"
+                android:text=""
                 android:textColor="@color/primary_text"
                 android:textSize="@dimen/tamañoTextoMostrar"
-                android:textStyle="bold"
-                android:text=""/>
+                android:textStyle="bold" />
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
             <TextView
                 android:id="@+id/tvemail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Sin datos"
+                android:text=""
                 android:textColor="@color/primary_text"
                 android:textSize="@dimen/tamañoTextoMostrar"
-                android:textStyle="bold"
-                android:text=""/>
+                android:textStyle="bold" />
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
             <TextView
                 android:id="@+id/tvdescripcion"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Sin datos"
+                android:text=""
                 android:textColor="@color/primary_text"
                 android:textSize="@dimen/tamañoTextoMostrar"
-                android:textStyle="bold"
-                android:text=""/>
+                android:textStyle="bold" />
         </TableLayout>
 
 
@@ -167,6 +182,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
+        android:theme="@style/BotonStyle"
         app:layout_constraintTop_toTopOf="parent" />
 
 

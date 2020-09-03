@@ -1,12 +1,9 @@
 package com.imamblek.aplicaciondecontactos;
 
-import android.content.Intent;
-import android.support.annotation.StringRes;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 
@@ -38,14 +35,12 @@ public class DetalleContacto extends AppCompatActivity {
         botonvolverPrincipal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent volverPrincipal = new Intent(DetalleContacto.this,MainActivity.class);
-                volverPrincipal.putExtra("$nombre",outnombre.getText().toString());
-                startActivity(volverPrincipal);
+                onBackPressed();
+                finish();
             }
         });
 
-        Bundle mostrardatos = getIntent().getExtras();
+        mostrardatos = getIntent().getExtras();
         String nombre = mostrardatos.getString("$nombre");
         String fecha = mostrardatos.getString("$fecha");
         String telefono = mostrardatos.getString("$telefono");
