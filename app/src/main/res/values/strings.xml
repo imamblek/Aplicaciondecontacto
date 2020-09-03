@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Aplicacion de contactos</string>
+    <string name="nombre">Nombre completo:</string>
+    <string name="fechaNacimiento">Fecha de nacimiento:</string>
+    <string name="telefono">Teléfono:</string>
+    <string name="email">Email:</string>
+    <string name="descripcionContacto">Descripción del contacto:</string>
+    <string name="botonSalvaDatosUsuario">Siguiente</string>
+    <string name="txtayudatocar2veces">Toca dos veces</string>
+    <string name="botonEditarDatosUsuario">Editar Datos</string>
+
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleContacto"
+    tools:ignore="MissingConstraints">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="35dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/tamañoTextoMostrar"
+                android:textStyle="bold"
+                android:text="@string/nombre"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/tamañoTextoMostrar"
+                android:textStyle="bold"
+                android:text="@string/fechaNacimiento"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/telefono"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/tamañoTextoMostrar"
+                android:textStyle="bold"
+                android:text="@string/telefono"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/tamañoTextoMostrar"
+                android:textStyle="bold"
+                android:text="@string/email"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/tamañoTextoMostrar"
+                android:textStyle="bold"
+                android:text="@string/descripcionContacto"/>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="35dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tvnombre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Sin datos"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/tamañoTextoMostrar"
+                android:textStyle="bold"
+                android:text=""/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tvfecha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Sin datos"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/tamañoTextoMostrar"
+                android:textStyle="bold"
+                android:text=""/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tvtelefono"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Sin datos"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/tamañoTextoMostrar"
+                android:textStyle="bold"
+                android:text=""/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tvemail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Sin datos"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/tamañoTextoMostrar"
+                android:textStyle="bold"
+                android:text=""/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tvdescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Sin datos"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/tamañoTextoMostrar"
+                android:textStyle="bold"
+                android:text=""/>
+        </TableLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botonEditarDatosUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/botonEditarDatosUsuario"
+        android:textSize="@dimen/tamañoTxtBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
